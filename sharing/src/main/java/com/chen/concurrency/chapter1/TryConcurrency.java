@@ -4,19 +4,22 @@ public class TryConcurrency {
 
     public static void main(String[] args) {
 
-        new Thread("READ-Thread"){
+        Thread t = new Thread("READ-Thread"){
             @Override
             public void run() {
+                printIn(Thread.currentThread().getName()); //main
                 readFromDataBase();
             }
-        }.start();
+        };
 
-        new Thread("WRITE-Thread"){
-            @Override
-            public void run() {
-                writeDataToFile();
-            }
-        }.start();
+        t.run();
+
+//        new Thread("WRITE-Thread"){
+//            @Override
+//            public void run() {
+//                writeDataToFile();
+//            }
+//        }.start();
 
 //        try {
 //            Thread.sleep(1000 * 300L);
