@@ -4,7 +4,8 @@ renderNumberedHeading: true
 grammar_cjkRuby: true
 ---
 
-### 线程的生命周期![enter description here](./images/1574928664487.png)
+### 线程的生命周期
+![enter description here](http://m.qpic.cn/psb?/V127THue4SJ8gD/mZjvIrdwacFhbW7bNzFQvHHLlJOj00d9pJXsM08UWkc!/b/dL8AAAAAAAAA&bo=zgTKAQAAAAADByM!&rf=viewer_4)
 
 ### 线程的启动 start()
 
