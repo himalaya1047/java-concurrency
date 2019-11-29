@@ -85,4 +85,10 @@ public class TemplateMethod {
 ##################
 ```
 
+### 总结
+#### java应用程序的main函数是一个线程，是被JVM启动的时候调用，线程的名字叫main
+#### 实现一个线程，必须创建Thread实例，override run方法，并且调用start方法
+#### 在JVM启动后，实际上有多个线程，但是至少有一个非守护线程
+#### 当你调用一个线程start方法的时候，此时至少有两个线程，一个是调用你的线程，还有一个是执行run方法的线程
+#### 线程的生命周期分为new runnable running block termate
 
